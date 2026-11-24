@@ -461,8 +461,8 @@ let lastLoadedAt=0;
 /* ---- Stockage en ligne : Supabase (REST, sans bibliothèque) ----
    Pour ne plus avoir à ressaisir la configuration après un vidage du cache,
    colle ici l'URL de ton projet et sa clé publique « anon » : */
-const CLOUD_URL='';   // ex. 'https://abcdefgh.supabase.co'
-const CLOUD_ANON='';  // clé « anon public » (Project Settings → API)
+const CLOUD_URL='https://ihmiwaqnlhukqzjemokk.supabase.co';   // ex. 'https://abcdefgh.supabase.c'
+const CLOUD_ANON='sb_publishable_yD7rfWR6wMEXkGNAmLRc_g_nr6U_Gk2';  // clé « anon public » (Project Settings → API)
 const CLOUD_SQL=`create table if not exists public.notion_state (
   user_id uuid primary key default auth.uid() references auth.users(id) on delete cascade,
   payload jsonb not null,
